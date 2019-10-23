@@ -3,7 +3,7 @@
   "description": "A tool to peek at and compare yarn lockfiles",
   "license": "MIT",
   "author": "Em McDonald",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "bin": {
     "lock-check": "./bin/cli.js"
   },
