@@ -11,7 +11,7 @@ module.exports = contents =>
         requestedPackages &&
         requestedPackages.reduce(
           (accumulatedRequestedPackages, requestedPackage) => {
-            const parsed = /^\"?(?<name>.+)@(?<requested>\^?\d\.\d\.\d)\"?/gm.exec(
+            const parsed = /^\"?(?<name>.+)@(?<requested>\^?\d+\.\d+\.\d+)\"?/gm.exec(
               requestedPackage
             );
             if (parsed && parsed.groups) {
