@@ -1,5 +1,5 @@
-const readLockfile = require("./read-lockfile");
-const parseLockfile = require("./parse-lockfile");
+const readLockfile = require("./utils/read-lockfile");
+const parseLockfile = require("./utils/parse-lockfile");
 
 module.exports = lockfile => {
   const contents = readLockfile(lockfile);
