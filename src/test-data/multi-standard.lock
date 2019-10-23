@@ -8,7 +8,7 @@ bar@^2.20.3, bar@^2.20.4:
   resolved "https://bar"
   integrity sha512-bar
 
-baz@^3.2.30, baz@^3.2.40:
+baz@^3.2.30, baz@~3.2.40:
   version "3.2.50"
   resolved "https://baz"
   integrity sha512-baz

@@ -22,7 +22,7 @@ describe("parseLockfile", () => {
   const expectedMultiStandard = [
     { name: "foo", requested: ["^10.2.3", "^10.2.4"], resolved: "10.2.5" },
     { name: "bar", requested: ["^2.20.3", "^2.20.4"], resolved: "2.20.5" },
-    { name: "baz", requested: ["^3.2.30", "^3.2.40"], resolved: "3.2.50" }
+    { name: "baz", requested: ["^3.2.30", "~3.2.40"], resolved: "3.2.50" }
   ];
 
   const expectedMultiCustom = [
