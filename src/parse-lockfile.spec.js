@@ -15,7 +15,7 @@ describe("parseLockfile", () => {
 
   const expectedCustom = [
     { name: "@foo/foo", requested: ["^1.2.3"], resolved: "1.2.4" },
-    { name: "@bar/bar", requested: ["^2.2.3"], resolved: "2.2.4" },
+    { name: "@bar/bar", requested: ["*"], resolved: "2.2.4" },
     { name: "@baz/baz", requested: ["^3.2.3"], resolved: "3.2.4" }
   ];
 
@@ -27,7 +27,7 @@ describe("parseLockfile", () => {
 
   const expectedMultiCustom = [
     { name: "@foo/foo", requested: ["^1.2.3", "^1.2.4"], resolved: "1.2.5" },
-    { name: "@bar/bar", requested: ["^2.2.3", "^2.2.4"], resolved: "2.2.5" },
+    { name: "@bar/bar", requested: ["^2.2.3", "*"], resolved: "2.2.5" },
     { name: "@baz/baz", requested: ["^3.2.3", "^3.2.4"], resolved: "3.2.5" }
   ];
 

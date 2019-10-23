@@ -3,7 +3,7 @@
   resolved "https://foo"
   integrity sha512-foo
 
-"@bar/bar@^2.2.3, @bar/bar@^2.2.4":
+"@bar/bar@^2.2.3, @bar/bar@*":
   version "2.2.5"
   resolved "https://bar"
   integrity sha512-bar
