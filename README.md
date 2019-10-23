@@ -1,6 +1,11 @@
 # lock-check
 
-A tool to peek at and compare yarn lockfiles
+[![npm version](https://badge.fury.io/js/lock-check.svg)](https://www.npmjs.com/package/lock-check)
+[![build status](https://travis-ci.org/egmcdonald/lock-check.svg?branch=master)](https://travis-ci.org/egmcdonald/lock-check)
+
+A tool to peek at and compare yarn lockfiles.
+
+---
 
 ## Installation
 
