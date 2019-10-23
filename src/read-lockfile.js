@@ -1,13 +1,14 @@
 const fs = require("fs");
+const path = require("path");
 
 module.exports = lockfile => {
-  if (!lockfile.endsWith(".lock")) {
+  if (!lockfile.endsWith(".lock"))
     throw new Error(`File ${lockfile} is not a valid lockfile`);
-  }
 
-  if (!fs.existsSync(lockfile)) {
-    throw new Error(`File ${lockfile} does not exist`);
-  }
+  const fullPath = path.join(__dirname, "../", lockfile);
 
-  return fs.readFileSync(lockfile).toString();
+  if (!fs.existsSync(fullPath))
+    throw new Error(`File ${fullPath} does not exist`);
+
+  return fs.readFileSync(fullPath).toString();
 };
