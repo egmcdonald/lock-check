@@ -3,6 +3,5 @@ module.exports = contents =>
     const parsed = /^\"?(?<name>.+)@(?<requested>\^?\d\.\d\.\d)\"?\:\n\s\s.+\"(?<resolved>.+)\"/gm.exec(
       pkg
     );
-    if (parsed && parsed.groups) acc.push(parsed.groups);
-    return acc;
+    return parsed && parsed.groups ? [...acc, parsed.groups] : acc;
   }, []);
