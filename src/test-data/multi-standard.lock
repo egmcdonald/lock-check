@@ -1,0 +1,14 @@
+foo@^1.2.3, foo@^1.2.4:
+  version "1.2.5"
+  resolved "https://foo"
+  integrity sha512-foo
+
+bar@^2.2.3, bar@^2.2.4:
+  version "2.2.5"
+  resolved "https://bar"
+  integrity sha512-bar
+
+baz@^3.2.3, baz@^3.2.4:
+  version "3.2.5"
+  resolved "https://baz"
+  integrity sha512-baz
