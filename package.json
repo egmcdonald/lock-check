@@ -1,13 +1,13 @@
 {
   "name": "lock-check",
-  "version": "1.0.0",
   "description": "A tool to peek at and compare yarn lockfiles",
+  "license": "MIT",
+  "author": "Em McDonald",
+  "version": "1.0.0",
   "scripts": {
     "start": "node bin/cli.js",
     "test": "jest"
   },
-  "author": "Em McDonald",
-  "license": "MIT",
   "dependencies": {
     "commander": "^3.0.2"
   },
