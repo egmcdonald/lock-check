@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "commander": "^5.0.0"
+    "commander": "^6.1.0"
   },
   "devDependencies": {
     "jest": "^26.4.2"
